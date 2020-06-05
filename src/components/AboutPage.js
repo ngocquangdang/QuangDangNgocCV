@@ -6,10 +6,10 @@ export default function AboutPage() {
     { key: 'name', description: 'quang ngoc dang' },
     { key: 'phone', description: '+84 984 863 639' },
     { key: 'birthday', description: '06/13/1998' },
-    { key: 'email', description: 'ngocquang.nq98@gmail.com', unCap: true},
+    { key: 'email', description: 'ngocquang.nq98@gmail.com', unCap: true },
     {
       key: 'address',
-      description: '459 ton duc thang str, hoa khanh nam, da nang',
+      description: '459 ton duc thang str, hoa khanh nam ward, da nang',
     },
     { key: 'facebook', description: 'fb.com/ngoc.quang256', unCap: true },
   ];
@@ -21,11 +21,12 @@ export default function AboutPage() {
       <About>
         <Title>about me</Title>
         <Detail>
+          <Title>career goal</Title>
           <Paragrap>
-            Sed ut perspiciatis unde accusantium doloremque laudantium,totam rem
-            aperiam. Sed ut perspiciatis unde omnis iste natus error sit
-            voluptatem accusantium doloremque laudantium,totam rem aperiam,
-            eaque ipsa quae ab illo inventore veritatis et quasi.
+            
+            Improved programming skills, English skills, technical skills and
+            soft skills necessary for the web developer. Master front-end in two
+            years, after is a full stack web developer in three-four years.
           </Paragrap>
           <ContactGroup>
             {initdata.map((item, index) => (
@@ -36,8 +37,10 @@ export default function AboutPage() {
             ))}
           </ContactGroup>
         </Detail>
-        <Button href="#my-experience" black>experience</Button>
-        <Button href="#my-project"> projects</Button>
+        <Button href='#my-experience' black>
+          experience
+        </Button>
+        <Button href='#my-project'> projects</Button>
       </About>
     </Container>
   );
@@ -75,27 +78,26 @@ const ContactGroup = styled.div`
 const Contact = styled.div`
   line-height: 2.5;
   width: 270px;
-  
 `;
 const Label = styled.label`
   font-weight: 700;
 `;
 const Description = styled.label`
-  text-transform: ${props => props.cap ? "none": "capitalize" };
+  text-transform: ${(props) => (props.cap ? 'none' : 'capitalize')};
   color: #333;
   font-weight: 400;
 `;
 const Button = styled.a`
-  background: ${props => props.black ? "black" : "white"};
-  color: ${props => props.black ? "white" : "black"};
+  background: ${(props) => (props.black ? 'black' : 'white')};
+  color: ${(props) => (props.black ? 'white' : 'black')};
   text-transform: capitalize;
   padding: 1rem 3rem;
   margin-right: 20px;
   border-radius: 30px;
   box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.14);
   text-decoration: none;
-  &:hover{
+  &:hover {
     color: #3e43e9;
     cursor: pointer;
   }
-`
+`;
