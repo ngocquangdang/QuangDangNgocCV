@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import ScrollableAnchor from "react-scrollable-anchor";
 
 export default function HomePage() {
   return (

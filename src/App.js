@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import ScrollableAnchor from "react-scrollable-anchor";
 import HomePage from "./components/HomePage";
 import AboutPage from "./components/AboutPage";
 import MenuLeft from "./components/MenuLeft";
