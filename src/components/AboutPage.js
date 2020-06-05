@@ -1,31 +1,101 @@
 import React from 'react';
 import styled from 'styled-components';
-
-export default function AboutPage(){
+import ImageCover from './imgs/cover.jpg';
+export default function AboutPage() {
+  const initdata = [
+    { key: 'name', description: 'quang ngoc dang' },
+    { key: 'phone', description: '+84 984 863 639' },
+    { key: 'birthday', description: '06/13/1998' },
+    { key: 'email', description: 'ngocquang.nq98@gmail.com', unCap: true},
+    {
+      key: 'address',
+      description: '459 ton duc thang str, hoa khanh nam, da nang',
+    },
+    { key: 'facebook', description: 'fb.com/ngoc.quang256', unCap: true },
+  ];
   return (
-    <Container id='about-page'>
+    <Container id='about-me'>
       <Avatar>
-        <div> avatar</div>
+        <img src={ImageCover} alt='' style={{ width: '100%' }} />
       </Avatar>
       <About>
-        <div>about</div>
+        <Title>about me</Title>
+        <Detail>
+          <Paragrap>
+            Sed ut perspiciatis unde accusantium doloremque laudantium,totam rem
+            aperiam. Sed ut perspiciatis unde omnis iste natus error sit
+            voluptatem accusantium doloremque laudantium,totam rem aperiam,
+            eaque ipsa quae ab illo inventore veritatis et quasi.
+          </Paragrap>
+          <ContactGroup>
+            {initdata.map((item, index) => (
+              <Contact key={index}>
+                <Label>{item.key}: </Label>
+                <Description cap={item.unCap}>{item.description}</Description>
+              </Contact>
+            ))}
+          </ContactGroup>
+        </Detail>
+        <Button href="#my-experience" black>experience</Button>
+        <Button href="#my-project"> projects</Button>
       </About>
     </Container>
-  )
+  );
 }
 
-const Container =  styled.div`
+const Container = styled.div`
   display: flex;
-  background: gray;
-  padding: 100px 150px;
-  width: 100vh;
-  height: 100vh;
-`
+  padding: 100px 3%;
+  justify-content: space-around;
+`;
 const Avatar = styled.div`
-   flex: 4;
-   background: yellow;
-`
+  width: 430px;
+`;
 const About = styled.div`
-  flex: 5;
-  background: green;
+  width: 570px;
+`;
+const Title = styled.h1`
+  text-transform: capitalize;
+`;
+const Detail = styled.div`
+  margin-bottom: 30px;
+`;
+const Paragrap = styled.div`
+  color: #333;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+`;
+const ContactGroup = styled.div`
+  text-transform: capitalize;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 0;
+`;
+const Contact = styled.div`
+  line-height: 2.5;
+  width: 270px;
+  
+`;
+const Label = styled.label`
+  font-weight: 700;
+`;
+const Description = styled.label`
+  text-transform: ${props => props.cap ? "none": "capitalize" };
+  color: #333;
+  font-weight: 400;
+`;
+const Button = styled.a`
+  background: ${props => props.black ? "black" : "white"};
+  color: ${props => props.black ? "white" : "black"};
+  text-transform: capitalize;
+  padding: 1rem 3rem;
+  margin-right: 20px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.14);
+  text-decoration: none;
+  &:hover{
+    color: #3e43e9;
+    cursor: pointer;
+  }
 `
