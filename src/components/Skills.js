@@ -14,7 +14,9 @@ export default function Skill(props) {
     </Container>
   );
 }
-const Container = styled.div``;
+const Container = styled.div`
+  margin: 10px;
+`;
 const Item = styled.div`
   line-height: 2.5;
 `;

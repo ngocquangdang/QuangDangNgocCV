@@ -2,13 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 import Facebook from './imgs/facebook.svg';
 import Skype from './imgs/skype.svg';
+import HomeRun from './imgs/home-run.svg';
+import Rocket from './imgs/rocket.svg';
+import StreetView from './imgs/street-view.svg';
+import Work from './imgs/work.svg';
+
 import Avatars from './imgs/avt.jpg';
 export default function MenuLeft() {
   const URL = [
-    { url: 'home-page', name: 'home' },
-    { url: 'about-me', name: 'about' },
-    { url: 'my-experience', name: 'experience' },
-    { url: 'my-project', name: 'project' },
+    { url: 'home-page', name: 'home', icon: `${HomeRun}`},
+    { url: 'about-me', name: 'about', icon: `${StreetView}` },
+    { url: 'my-experience', name: 'experience', icon: `${Rocket}` },
+    { url: 'my-project', name: 'project', icon: `${Work}` },
   ];
   return (
     <Container>
@@ -19,6 +24,7 @@ export default function MenuLeft() {
       <Menu>
         {URL.map((url, index) => (
           <Item key={index}>
+            <Icon src={url.icon}/>
             <Link href={`#${url.url}`}>{url.name}</Link>
           </Item>
         ))}
@@ -49,6 +55,7 @@ const Title = styled.h5`
   color: white;
   text-align: center;
   text-transform: uppercase;
+  
 `;
 const Menu = styled.ul`
   margin: 15% 0;
@@ -57,11 +64,20 @@ const Menu = styled.ul`
 const Item = styled.li`
   padding: 0.7rem;
   list-style: none;
+  
 `;
+
 const Link = styled.a`
   text-transform: capitalize;
   text-decoration: none;
   color: white;
+  &:visited{
+    color: white;
+    &:hover {
+      color: #3e43e9;
+      cursor: pointer;
+    }
+  }
 `;
 const Contact = styled.div`
   display: flex;

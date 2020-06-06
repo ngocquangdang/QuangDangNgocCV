@@ -11,7 +11,7 @@ export default function AboutPage() {
       key: 'address',
       description: '459 ton duc thang str, hoa khanh nam ward, da nang',
     },
-    { key: 'facebook', description: 'fb.com/ngoc.quang256', unCap: true },
+    { key: 'facebook', description: 'https:/fb.com/ngoc.quang256', unCap: true },
   ];
   return (
     <Container id='about-me'>
@@ -59,10 +59,10 @@ const About = styled.div`
 `;
 const Title = styled.h1`
   text-transform: capitalize;
+  margin-top: 0;
 `;
 const SubTitle = styled.h2`
   text-transform: capitalize;
-
 `
 const Detail = styled.div`
   margin-bottom: 30px;

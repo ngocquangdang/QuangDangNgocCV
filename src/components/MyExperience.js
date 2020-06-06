@@ -22,17 +22,17 @@ export default function MyExperience() {
     },
   ];
   const skills = [
-    {skill_name: "html/css", percent: "70%"},
-    {skill_name: "git", percent: "70%"},
-    {skill_name: "javascript", percent: "70%"},
-    {skill_name: "sass/scss", percent: "70%"},
-    {skill_name: "react", percent: "70%"},
-    {skill_name: "english", percent: "70%"},
-  ]
+    { skill_name: 'html/css', percent: '70%' },
+    { skill_name: 'git', percent: '70%' },
+    { skill_name: 'javascript', percent: '70%' },
+    { skill_name: 'sass/scss', percent: '70%' },
+    { skill_name: 'react', percent: '70%' },
+    { skill_name: 'english', percent: '70%' },
+  ];
   return (
     <Container id='my-experience'>
       <Experience>
-        <div> Experience</div>
+        <Title> Experience</Title>
         <TimeLine>
           {experiences.map((exp, index) => (
             <Item key={index}>
@@ -50,7 +50,7 @@ export default function MyExperience() {
         </TimeLine>
       </Experience>
       <Skills>
-        <div> Skills </div>
+        <Title> Skills </Title>
         <Skill skill={skills} />
       </Skills>
     </Container>
@@ -69,7 +69,10 @@ const Experience = styled.div`
 const Skills = styled.div`
   flex: 1;
 `;
-
+const Title = styled.h1`
+  margin-top: 0;
+  margin-left: 10px;
+`;
 const TimeLine = styled.div``;
 const Dot = styled.span`
   width: 10px;
@@ -119,7 +122,6 @@ const Position = styled.span`
   text-transform: capitalize;
   font-weight: 700;
   line-height: 2;
-
 `;
 const Description = styled.span`
   text-align: start;
