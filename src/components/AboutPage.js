@@ -21,7 +21,7 @@ export default function AboutPage() {
       <About>
         <Title>about me</Title>
         <Detail>
-          <Title>career goal</Title>
+          <SubTitle>career goal</SubTitle>
           <Paragrap>
             
             Improved programming skills, English skills, technical skills and
@@ -60,6 +60,10 @@ const About = styled.div`
 const Title = styled.h1`
   text-transform: capitalize;
 `;
+const SubTitle = styled.h2`
+  text-transform: capitalize;
+
+`
 const Detail = styled.div`
   margin-bottom: 30px;
 `;
