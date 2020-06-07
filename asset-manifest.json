@@ -1,32 +1,32 @@
 {
   "files": {
     "main.css": "/Qprofile/static/css/main.4cf38761.chunk.css",
-    "main.js": "/Qprofile/static/js/main.45e03345.chunk.js",
-    "main.js.map": "/Qprofile/static/js/main.45e03345.chunk.js.map",
+    "main.js": "/Qprofile/static/js/main.df6d7c75.chunk.js",
+    "main.js.map": "/Qprofile/static/js/main.df6d7c75.chunk.js.map",
     "runtime-main.js": "/Qprofile/static/js/runtime-main.793f0eaa.js",
     "runtime-main.js.map": "/Qprofile/static/js/runtime-main.793f0eaa.js.map",
-    "static/js/2.00835439.chunk.js": "/Qprofile/static/js/2.00835439.chunk.js",
-    "static/js/2.00835439.chunk.js.map": "/Qprofile/static/js/2.00835439.chunk.js.map",
+    "static/js/2.b5e060d0.chunk.js": "/Qprofile/static/js/2.b5e060d0.chunk.js",
+    "static/js/2.b5e060d0.chunk.js.map": "/Qprofile/static/js/2.b5e060d0.chunk.js.map",
     "index.html": "/Qprofile/index.html",
-    "precache-manifest.38e562269da4d3696e915383d531b23d.js": "/Qprofile/precache-manifest.38e562269da4d3696e915383d531b23d.js",
+    "precache-manifest.facde8198264cdc9e669a827d64a2366.js": "/Qprofile/precache-manifest.facde8198264cdc9e669a827d64a2366.js",
     "service-worker.js": "/Qprofile/service-worker.js",
     "static/css/main.4cf38761.chunk.css.map": "/Qprofile/static/css/main.4cf38761.chunk.css.map",
-    "static/js/2.00835439.chunk.js.LICENSE.txt": "/Qprofile/static/js/2.00835439.chunk.js.LICENSE.txt",
+    "static/js/2.b5e060d0.chunk.js.LICENSE.txt": "/Qprofile/static/js/2.b5e060d0.chunk.js.LICENSE.txt",
     "static/media/avt.jpg": "/Qprofile/static/media/avt.c2b54396.jpg",
     "static/media/box.svg": "/Qprofile/static/media/box.08b7835a.svg",
     "static/media/cover.jpg": "/Qprofile/static/media/cover.462afdc8.jpg",
-    "static/media/facebook.svg": "/Qprofile/static/media/facebook.17cd43f7.svg",
+    "static/media/facebook.svg": "/Qprofile/static/media/facebook.5c6b99f3.svg",
     "static/media/homepage.jpg": "/Qprofile/static/media/homepage.b9fd5552.jpg",
     "static/media/homepage.svg": "/Qprofile/static/media/homepage.ec713aff.svg",
     "static/media/mass-icons.png": "/Qprofile/static/media/mass-icons.94069451.png",
     "static/media/project.svg": "/Qprofile/static/media/project.f915389a.svg",
-    "static/media/skype.svg": "/Qprofile/static/media/skype.c15731bd.svg",
+    "static/media/skype.svg": "/Qprofile/static/media/skype.7d13713a.svg",
     "static/media/street-view.svg": "/Qprofile/static/media/street-view.060ac3f7.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.793f0eaa.js",
-    "static/js/2.00835439.chunk.js",
+    "static/js/2.b5e060d0.chunk.js",
     "static/css/main.4cf38761.chunk.css",
-    "static/js/main.45e03345.chunk.js"
+    "static/js/main.df6d7c75.chunk.js"
   ]
 }
