@@ -34,8 +34,7 @@ export default function MenuLeft() {
             key={index}
             active={url.isActive}
             onClick={() =>
-              setURL(
-                [
+              setURL([
                 ...URL.slice(0, index),
                 {
                   ...url,
@@ -56,9 +55,16 @@ export default function MenuLeft() {
         <AppContact src={Facebook}></AppContact>
         <AppContact src={Skype}></AppContact>
       </Contact>
+      <Signature>copyright © 2020</Signature>
     </Container>
   );
 }
+const Signature = styled.p`
+  color: #ffffff;
+  text-transform: capitalize;
+  text-align: center;
+  width: 100%;
+`;
 const Container = styled.ul`
   height: 100%;
   padding-left: 0;

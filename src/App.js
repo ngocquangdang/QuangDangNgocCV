@@ -5,6 +5,7 @@ import AboutPage from "./components/AboutPage";
 import MenuLeft from "./components/MenuLeft";
 import MyProeject from "./components/MyProject";
 import MyExperience from "./components/MyExperience";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,7 +18,9 @@ function App() {
         <AboutPage />
         <MyExperience />
         <MyProeject />
+        <Footer />
       </Content>
+
     </Container>
   );
 }
