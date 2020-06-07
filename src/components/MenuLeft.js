@@ -1,20 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import Facebook from './imgs/facebook.svg';
 import Skype from './imgs/skype.svg';
-import HomeRun from './imgs/home-run.svg';
-import Rocket from './imgs/rocket.svg';
-import StreetView from './imgs/street-view.svg';
-import Work from './imgs/work.svg';
+import iHome from './imgs/homepage.svg';
+import iRocket from './imgs/project.svg';
+import iStreetView from './imgs/street-view.svg';
+import iWork from './imgs/box.svg';
 
 import Avatars from './imgs/avt.jpg';
 export default function MenuLeft() {
-  const URL = [
-    { url: 'home-page', name: 'home', icon: `${HomeRun}`},
-    { url: 'about-me', name: 'about', icon: `${StreetView}` },
-    { url: 'my-experience', name: 'experience', icon: `${Rocket}` },
-    { url: 'my-project', name: 'project', icon: `${Work}` },
-  ];
+  const [URL, setURL] = useState([
+    { url: 'home-page', name: 'home', icon: `${iHome}`, isActive: true },
+    { url: 'about-me', name: 'about', icon: `${iStreetView}`, isActive: false },
+    {
+      url: 'my-experience',
+      name: 'experience',
+      icon: `${iRocket}`,
+      isActive: false,
+    },
+    { url: 'my-project', name: 'project', icon: `${iWork}`, isActive: false },
+  ]);
+  console.log('MenuLeft -> URL', URL);
+
   return (
     <Container>
       <Header>
@@ -23,28 +30,45 @@ export default function MenuLeft() {
       </Header>
       <Menu>
         {URL.map((url, index) => (
-          <Item key={index}>
-            <Icon src={url.icon}/>
-            <Link href={`#${url.url}`}>{url.name}</Link>
+          <Item
+            key={index}
+            active={url.isActive}
+            onClick={() =>
+              setURL(
+                [
+                ...URL.slice(0, index),
+                {
+                  ...url,
+                  isActive: !url.isActive,
+                },
+                ...URL.slice(index + 1),
+              ])
+            }
+          >
+            <Icon src={url.icon} />
+            <Link href={`#${url.url}`} active={url.isActive}>
+              {url.name}
+            </Link>
           </Item>
         ))}
       </Menu>
       <Contact>
-        <Icon src={Facebook}></Icon>
-        <Icon src={Skype}></Icon>
+        <AppContact src={Facebook}></AppContact>
+        <AppContact src={Skype}></AppContact>
       </Contact>
     </Container>
   );
 }
 const Container = styled.ul`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   height: 100%;
   padding-left: 0;
   margin-top: 20%;
 `;
-const Header = styled.div``;
+const Header = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 const Avatar = styled.div`
   width: 150px;
   height: 150px;
@@ -53,26 +77,46 @@ const Avatar = styled.div`
 `;
 const Title = styled.h5`
   color: white;
-  text-align: center;
   text-transform: uppercase;
-  
 `;
 const Menu = styled.ul`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 15% 0;
   padding-left: 0;
 `;
+const Icon = styled.img`
+  width: 24px;
+  height: 24px;
+  padding: 0 0.5rem;
+`;
+const AppContact = styled.img`
+  margin-right: 6px;
+  width: 20px;
+  height: 20px;
+`;
 const Item = styled.li`
-  padding: 0.7rem;
+  display: flex;
+  width: -webkit-fill-available;
+  padding: 0.7rem 0 0.7rem 1.5rem;
   list-style: none;
-  
+  border-left: ${(props) => (props.active ? '4px solid #3e43e9' : 'none')};
+  &:hover {
+    color: #3e43e9;
+    cursor: pointer;
+    > ${Icon} {
+      filter: #3e43e9;
+    }
+  }
 `;
 
 const Link = styled.a`
   text-transform: capitalize;
   text-decoration: none;
-  color: white;
-  &:visited{
-    color: white;
+  color: ${(props) => (props.active ? '#3e43e9' : '#ffffff')};
+  padding-left: 0.5rem;
+  &:visited {
     &:hover {
       color: #3e43e9;
       cursor: pointer;
@@ -81,10 +125,7 @@ const Link = styled.a`
 `;
 const Contact = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
-`;
-const Icon = styled.img`
-  margin-right: 6px;
-  width: 20px;
-  height: 20px;
 `;

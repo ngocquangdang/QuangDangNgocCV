@@ -22,12 +22,12 @@ export default function MyExperience() {
     },
   ];
   const skills = [
-    { skill_name: 'html/css', percent: '70%' },
-    { skill_name: 'git', percent: '70%' },
-    { skill_name: 'javascript', percent: '70%' },
-    { skill_name: 'sass/scss', percent: '70%' },
-    { skill_name: 'react', percent: '70%' },
-    { skill_name: 'english', percent: '70%' },
+    { skill_name: 'html/css', percent: '70' },
+    { skill_name: 'git', percent: '70' },
+    { skill_name: 'javascript', percent: '70' },
+    { skill_name: 'sass/scss', percent: '70' },
+    { skill_name: 'react', percent: '70' },
+    { skill_name: 'english', percent: '70' },
   ];
   return (
     <Container id='my-experience'>

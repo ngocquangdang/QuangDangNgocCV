@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import HomeImage from './imgs/homepage.jpg';
-
+import BackgroundImage from './imgs/mass-icons.png';
 export default function MyProject() {
   const myProject = [
     {
@@ -60,6 +60,9 @@ const Container = styled.div`
   padding: 100px 3%;
   background-color: #ffffff;
   justify-content: space-between;
+  background-image: url(${BackgroundImage});
+  background-attachment: fixed;
+  background-size: cover;
 `;
 const Title = styled.h1`
   text-align: center;
