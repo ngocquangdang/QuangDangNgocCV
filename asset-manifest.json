@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Qprofile/static/css/main.e5928551.chunk.css",
-    "main.js": "/Qprofile/static/js/main.7db2b5cb.chunk.js",
-    "main.js.map": "/Qprofile/static/js/main.7db2b5cb.chunk.js.map",
+    "main.js": "/Qprofile/static/js/main.cb477d18.chunk.js",
+    "main.js.map": "/Qprofile/static/js/main.cb477d18.chunk.js.map",
     "runtime-main.js": "/Qprofile/static/js/runtime-main.793f0eaa.js",
     "runtime-main.js.map": "/Qprofile/static/js/runtime-main.793f0eaa.js.map",
     "static/js/2.72ab23a5.chunk.js": "/Qprofile/static/js/2.72ab23a5.chunk.js",
     "static/js/2.72ab23a5.chunk.js.map": "/Qprofile/static/js/2.72ab23a5.chunk.js.map",
     "index.html": "/Qprofile/index.html",
-    "precache-manifest.901edca40b7747aef928610ef52cf6af.js": "/Qprofile/precache-manifest.901edca40b7747aef928610ef52cf6af.js",
+    "precache-manifest.81de38d2ef5e6dc116279c656c6a4bac.js": "/Qprofile/precache-manifest.81de38d2ef5e6dc116279c656c6a4bac.js",
     "service-worker.js": "/Qprofile/service-worker.js",
     "static/css/main.e5928551.chunk.css.map": "/Qprofile/static/css/main.e5928551.chunk.css.map",
     "static/js/2.72ab23a5.chunk.js.LICENSE.txt": "/Qprofile/static/js/2.72ab23a5.chunk.js.LICENSE.txt",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.793f0eaa.js",
     "static/js/2.72ab23a5.chunk.js",
     "static/css/main.e5928551.chunk.css",
-    "static/js/main.7db2b5cb.chunk.js"
+    "static/js/main.cb477d18.chunk.js"
   ]
 }
