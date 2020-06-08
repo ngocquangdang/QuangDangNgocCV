@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ImageCover from "./imgs/cover.jpg";
 export default function AboutPage() {
   const initdata = [
-    { key: "name", description: "quang ngoc dang" },
+    { key: "name", description: "ngoc quang dang" },
     { key: "phone", description: "+84 984 863 639" },
     { key: "birthday", description: "06/13/1998" },
     { key: "email", description: "ngocquang.nq98@gmail.com", unCap: true },
@@ -20,7 +20,7 @@ export default function AboutPage() {
   return (
     <Container id="about-me">
       <Avatar>
-        <img src={ImageCover} alt="" style={{ width: "100%" }} />
+        <img src={ImageCover} alt="" style={{ width: "100%", height: "100%"}} />
       </Avatar>
       <About>
         <Title>about me</Title>
@@ -77,6 +77,7 @@ const Avatar = styled.div`
     display: flex;
     justify-content: center;
     margin: 16px auto;
+    width: 100%;
   }
   @media (min-width: 465px) and (max-width: 767px) {
     display: flex;
@@ -84,11 +85,12 @@ const Avatar = styled.div`
     margin: 16px auto;
     width: 100%;
   }
-  @media (max-width: 464px) {
+  @media (min-width: 320px) and (max-width: 464px) {
     display: flex;
     justify-content: center;
     margin: 16px auto;
     width: 100%;
+    height: 100%;
   }
 `;
 const About = styled.div`
@@ -99,6 +101,7 @@ const About = styled.div`
   }
   @media (min-width: 768px) and (max-width: 1023px) {
     margin: 16px auto;
+    width: 100%;
   }
   @media (min-width: 465px) and (max-width: 767px) {
     width: 100%;
@@ -156,6 +159,9 @@ const Button = styled.a`
     color: #3e43e9;
     cursor: pointer;
   }
+  @media (min-width: 320px) and (max-width: 464px) {
+    margin : 0;
+  }
 `;
 const ButtonGroup = styled.div`
   display: flex;
@@ -167,5 +173,6 @@ const ButtonGroup = styled.div`
   @media (min-width: 465px) and (max-width: 767px) {
   }
   @media (min-width: 320px) and (max-width: 464px) {
+    justify-content: space-around;
   }
 `;

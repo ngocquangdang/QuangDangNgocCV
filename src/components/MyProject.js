@@ -87,20 +87,29 @@ const ListItem = styled.ul`
     flex: 2;
   }
   @media (min-width: 768px) and (max-width: 1023px) {
-    width: 100%;
+    
   }
   @media (min-width: 465px) and (max-width: 767px) {
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
-  @media (min-width: 320px) and(max-width: 464px) {
+  @media (min-width: 320px) and (max-width: 464px) {
     flex-direction: column;
-    width: 100%;
+   
   }
 `;
 const CartItem = styled.li`
   margin: 0 10px;
   text-transform: capitalize;
+  @media (min-width: 768px) and (max-width: 1023px) {
+    margin: 0 5px;
+    justify-content: space-between;
+  }
+  @media (min-width: 320px) and (max-width: 464px) {
+    margin: 0;
+   
+  }
 `;
 const Image = styled.img`
   display: flex;

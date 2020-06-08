@@ -67,11 +67,12 @@ const Container = styled.div`
   }
   @media (min-width: 768px) and (max-width: 1023px) {
     margin: 16px auto;
+    flex-direction: column;
   }
   @media (min-width: 465px) and (max-width: 767px) {
     flex-direction: column;
   }
-  @media (min-width: 320px) and(max-width: 464px) {
+  @media (min-width: 320px) and (max-width: 464px) {
     flex-direction: column;
   }
 `;
@@ -84,6 +85,8 @@ const Skills = styled.div`
 const Title = styled.h1`
   margin-top: 0;
   margin-left: 10px;
+  margin-top: 20px;
+
 `;
 const TimeLine = styled.div``;
 const Dot = styled.span`
