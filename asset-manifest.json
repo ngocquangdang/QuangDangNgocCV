@@ -1,28 +1,26 @@
 {
   "files": {
     "main.css": "/Qprofile/static/css/main.e5928551.chunk.css",
-    "main.js": "/Qprofile/static/js/main.cb477d18.chunk.js",
-    "main.js.map": "/Qprofile/static/js/main.cb477d18.chunk.js.map",
+    "main.js": "/Qprofile/static/js/main.fb16f02d.chunk.js",
+    "main.js.map": "/Qprofile/static/js/main.fb16f02d.chunk.js.map",
     "runtime-main.js": "/Qprofile/static/js/runtime-main.793f0eaa.js",
     "runtime-main.js.map": "/Qprofile/static/js/runtime-main.793f0eaa.js.map",
-    "static/js/2.72ab23a5.chunk.js": "/Qprofile/static/js/2.72ab23a5.chunk.js",
-    "static/js/2.72ab23a5.chunk.js.map": "/Qprofile/static/js/2.72ab23a5.chunk.js.map",
+    "static/js/2.3223e2bc.chunk.js": "/Qprofile/static/js/2.3223e2bc.chunk.js",
+    "static/js/2.3223e2bc.chunk.js.map": "/Qprofile/static/js/2.3223e2bc.chunk.js.map",
     "index.html": "/Qprofile/index.html",
-    "precache-manifest.81de38d2ef5e6dc116279c656c6a4bac.js": "/Qprofile/precache-manifest.81de38d2ef5e6dc116279c656c6a4bac.js",
+    "precache-manifest.343315229378170cc67174fe7224cc64.js": "/Qprofile/precache-manifest.343315229378170cc67174fe7224cc64.js",
     "service-worker.js": "/Qprofile/service-worker.js",
     "static/css/main.e5928551.chunk.css.map": "/Qprofile/static/css/main.e5928551.chunk.css.map",
-    "static/js/2.72ab23a5.chunk.js.LICENSE.txt": "/Qprofile/static/js/2.72ab23a5.chunk.js.LICENSE.txt",
+    "static/js/2.3223e2bc.chunk.js.LICENSE.txt": "/Qprofile/static/js/2.3223e2bc.chunk.js.LICENSE.txt",
     "static/media/avt.jpg": "/Qprofile/static/media/avt.c2b54396.jpg",
     "static/media/cover.jpg": "/Qprofile/static/media/cover.462afdc8.jpg",
-    "static/media/facebook-black.svg": "/Qprofile/static/media/facebook-black.cc140ba0.svg",
     "static/media/homepage.jpg": "/Qprofile/static/media/homepage.b9fd5552.jpg",
-    "static/media/mass-icons.png": "/Qprofile/static/media/mass-icons.94069451.png",
-    "static/media/skype-black.svg": "/Qprofile/static/media/skype-black.b81048ec.svg"
+    "static/media/mass-icons.png": "/Qprofile/static/media/mass-icons.94069451.png"
   },
   "entrypoints": [
     "static/js/runtime-main.793f0eaa.js",
-    "static/js/2.72ab23a5.chunk.js",
+    "static/js/2.3223e2bc.chunk.js",
     "static/css/main.e5928551.chunk.css",
-    "static/js/main.cb477d18.chunk.js"
+    "static/js/main.fb16f02d.chunk.js"
   ]
 }

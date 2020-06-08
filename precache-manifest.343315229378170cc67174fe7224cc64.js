@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4666f6995820a34791ac2b20481f674e",
+    "revision": "cc3faab48648cf032f1ed72040c674d5",
     "url": "/Qprofile/index.html"
   },
   {
-    "revision": "53e441b55e280de3efe1",
+    "revision": "e2851c52a2e89441722a",
     "url": "/Qprofile/static/css/main.e5928551.chunk.css"
   },
   {
-    "revision": "ab0ed1c5864e6bf40d50",
-    "url": "/Qprofile/static/js/2.72ab23a5.chunk.js"
+    "revision": "3a61603c8dffc8cbfa25",
+    "url": "/Qprofile/static/js/2.3223e2bc.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/Qprofile/static/js/2.72ab23a5.chunk.js.LICENSE.txt"
+    "url": "/Qprofile/static/js/2.3223e2bc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "53e441b55e280de3efe1",
-    "url": "/Qprofile/static/js/main.cb477d18.chunk.js"
+    "revision": "e2851c52a2e89441722a",
+    "url": "/Qprofile/static/js/main.fb16f02d.chunk.js"
   },
   {
     "revision": "a5fd94ca9c54aa6df51c",
@@ -32,19 +32,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Qprofile/static/media/cover.462afdc8.jpg"
   },
   {
-    "revision": "cc140ba052c6ea1f97e27b070de57886",
-    "url": "/Qprofile/static/media/facebook-black.cc140ba0.svg"
-  },
-  {
     "revision": "b9fd5552a1bc8ef50dd77a7b890f4e42",
     "url": "/Qprofile/static/media/homepage.b9fd5552.jpg"
   },
   {
     "revision": "94069451c6186116aed5f18b42544356",
     "url": "/Qprofile/static/media/mass-icons.94069451.png"
-  },
-  {
-    "revision": "b81048ecda4d34c98008584aeb0399d7",
-    "url": "/Qprofile/static/media/skype-black.b81048ec.svg"
   }
 ]);
