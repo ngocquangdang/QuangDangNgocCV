@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Facebook from './imgs/facebook.svg';
-import Skype from './imgs/skype.svg';
+import Facebook from './imgs/facebook-black.svg';
+import Skype from './imgs/skype-black.svg';
 
 export default function Footer() {
   return (
@@ -10,14 +10,13 @@ export default function Footer() {
         <Icon src={Facebook} />
         <Icon src={Skype} />
       </Contact>
-      <Signature>copyright © 2020</Signature>
+      <Signature>copyright © 2020 </Signature>
     </Container>
   );
 }
 const Icon = styled.img`
   width: 24px;
   height: 24px;
-  fill: #fff;
 `;
 const Contact = styled.div`
   display: flex;
@@ -29,6 +28,5 @@ text-transform: capitalize;
   width: 100%;
   `;
 const Container = styled.div`
-  padding: 100px auto;
-  background: #fff;
+  padding: 50px;
 `;

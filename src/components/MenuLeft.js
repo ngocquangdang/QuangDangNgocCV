@@ -1,26 +1,32 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import Facebook from './imgs/facebook.svg';
-import Skype from './imgs/skype.svg';
-import iHome from './imgs/homepage.svg';
-import iRocket from './imgs/project.svg';
-import iStreetView from './imgs/street-view.svg';
-import iWork from './imgs/box.svg';
+import React, { useState } from "react";
+import styled from "styled-components";
+import {
+  FaHome,
+  IoIosRocket,
+  FaStreetView,
+  FaToolbox,
+  FaFacebookF,
+  FaSkype,
+} from "react-icons/all";
 
-import Avatars from './imgs/avt.jpg';
+import Avatars from "./imgs/avt.jpg";
 export default function MenuLeft() {
   const [URL, setURL] = useState([
-    { url: 'home-page', name: 'home', icon: `${iHome}`, isActive: true },
-    { url: 'about-me', name: 'about', icon: `${iStreetView}`, isActive: false },
+    { url: "home-page", name: "home", icon: <FaHome />, isActive: true },
+    { url: "about-me", name: "about", icon: <FaStreetView />, isActive: false },
     {
-      url: 'my-experience',
-      name: 'experience',
-      icon: `${iRocket}`,
+      url: "my-experience",
+      name: "experience",
+      icon: <IoIosRocket />,
       isActive: false,
     },
-    { url: 'my-project', name: 'project', icon: `${iWork}`, isActive: false },
+    {
+      url: "my-project",
+      name: "project",
+      icon: <FaToolbox />,
+      isActive: false,
+    },
   ]);
-  console.log('MenuLeft -> URL', URL);
 
   return (
     <Container>
@@ -44,7 +50,7 @@ export default function MenuLeft() {
               ])
             }
           >
-            <Icon src={url.icon} />
+            {url.icon}
             <Link href={`#${url.url}`} active={url.isActive}>
               {url.name}
             </Link>
@@ -52,8 +58,12 @@ export default function MenuLeft() {
         ))}
       </Menu>
       <Contact>
-        <AppContact src={Facebook}></AppContact>
-        <AppContact src={Skype}></AppContact>
+        <Link href="https:/fb.com/ngoc.quang256" target="_blank">
+          <FaFacebookF style={{ fontSize: "20px", marginRight: "5px" }} />
+        </Link>
+        <Link target="_blank">
+          <FaSkype style={{ fontSize: "20px" }} />
+        </Link>
       </Contact>
       <Signature>copyright © 2020</Signature>
     </Container>
@@ -92,43 +102,32 @@ const Menu = styled.ul`
   margin: 15% 0;
   padding-left: 0;
 `;
-const Icon = styled.img`
-  width: 24px;
-  height: 24px;
-  padding: 0 0.5rem;
+
+const Link = styled.a`
+  text-transform: capitalize;
+  text-decoration: none;
+  color: ${(props) => (props.active ? "#3e43e9" : "#ffffff")};
+  padding-left: 0.5rem;
 `;
-const AppContact = styled.img`
-  margin-right: 6px;
-  width: 20px;
-  height: 20px;
-`;
+
 const Item = styled.li`
   display: flex;
   width: -webkit-fill-available;
   padding: 0.7rem 0 0.7rem 1.5rem;
   list-style: none;
-  border-left: ${(props) => (props.active ? '4px solid #3e43e9' : 'none')};
+  border-left: ${(props) => (props.active ? "4px solid #3e43e9" : "none")};
+  color: ${(props) => (props.active ? "#3e43e9" : "white")};
+
   &:hover {
     color: #3e43e9;
+    border-left: 4px solid #3e43e9;
     cursor: pointer;
-    > ${Icon} {
-      filter: #3e43e9;
+    > ${Link} {
+      color: inherit;
     }
   }
 `;
 
-const Link = styled.a`
-  text-transform: capitalize;
-  text-decoration: none;
-  color: ${(props) => (props.active ? '#3e43e9' : '#ffffff')};
-  padding-left: 0.5rem;
-  &:visited {
-    &:hover {
-      color: #3e43e9;
-      cursor: pointer;
-    }
-  }
-`;
 const Contact = styled.div`
   display: flex;
   align-items: center;

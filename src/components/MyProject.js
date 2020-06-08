@@ -63,6 +63,11 @@ const Container = styled.div`
   background-image: url(${BackgroundImage});
   background-attachment: fixed;
   background-size: cover;
+  @media (min-width: 345px){
+   display: flex;
+   flex-direction: column; 
+   align-items: center;
+  }
 `;
 const Title = styled.h1`
   text-align: center;
@@ -73,10 +78,25 @@ const Slider = styled.div`
 `;
 const ListItem = styled.ul`
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
   width: 100%;
+  @media (min-width: 1024px) and (max-width: 1280) {
+    flex: 2;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    width: 100%;
+  }
+  @media (min-width: 465px) and (max-width: 767px) {
+    flex-direction: column;
+    width: 100%;
+  }
+  @media (max-width: 464px) {
+    flex-direction: column;
+    width: 100%;
+  }
 `;
 const CartItem = styled.li`
   margin: 0 10px;

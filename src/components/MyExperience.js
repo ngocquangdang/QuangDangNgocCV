@@ -1,36 +1,36 @@
-import React from 'react';
-import styled from 'styled-components';
-import Skill from './Skills';
+import React from "react";
+import styled from "styled-components";
+import Skill from "./Skills";
 
 export default function MyExperience() {
   const experiences = [
     {
-      start_date: '01/2020',
-      end_date: '07/2020',
-      conpany_name: 'enclave company',
-      position: 'cadet',
+      start_date: "01/2020",
+      end_date: "07/2020",
+      conpany_name: "enclave company",
+      position: "cadet",
       description:
-        'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam',
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
     },
     {
-      start_date: '01/2020',
-      end_date: '07/2020',
-      conpany_name: 'enclave company 2',
-      position: 'cadet',
+      start_date: "01/2020",
+      end_date: "07/2020",
+      conpany_name: "enclave company 2",
+      position: "cadet",
       description:
-        'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam',
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
     },
   ];
   const skills = [
-    { skill_name: 'html/css', percent: '70' },
-    { skill_name: 'git', percent: '70' },
-    { skill_name: 'javascript', percent: '70' },
-    { skill_name: 'sass/scss', percent: '70' },
-    { skill_name: 'react', percent: '70' },
-    { skill_name: 'english', percent: '70' },
+    { skill_name: "html/css", percent: "70" },
+    { skill_name: "git", percent: "70" },
+    { skill_name: "javascript", percent: "70" },
+    { skill_name: "sass/scss", percent: "70" },
+    { skill_name: "react", percent: "70" },
+    { skill_name: "english", percent: "70" },
   ];
   return (
-    <Container id='my-experience'>
+    <Container id="my-experience">
       <Experience>
         <Title> Experience</Title>
         <TimeLine>
@@ -62,6 +62,18 @@ const Container = styled.div`
   padding: 100px 3%;
   background-color: #f6f7fd;
   justify-content: space-between;
+  @media (min-width: 1024px) and (max-width: 1280) {
+    flex: 2;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    margin: 16px auto;
+  }
+  @media (min-width: 465px) and (max-width: 767px) {
+    flex-direction: column;
+  }
+  @media (max-width: 464px) {
+    flex-direction: column;
+  }
 `;
 const Experience = styled.div`
   flex: 1;
@@ -89,7 +101,7 @@ const Item = styled.div`
   margin: 1rem 1rem;
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     top: 17px;
     left: 5px;
     width: 1px;
