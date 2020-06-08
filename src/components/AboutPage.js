@@ -104,7 +104,7 @@ const About = styled.div`
     width: 100%;
     margin: 0;
   }
-  @media (max-width: 464px) {
+  @media (min-width: 320px) and (max-width: 464px) {
     width: 100%;
     margin: 0;
   }
@@ -166,6 +166,6 @@ const ButtonGroup = styled.div`
   }
   @media (min-width: 465px) and (max-width: 767px) {
   }
-  @media (max-width: 464px) {
+  @media (min-width: 320px) and (max-width: 464px) {
   }
 `;

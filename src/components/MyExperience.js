@@ -71,7 +71,7 @@ const Container = styled.div`
   @media (min-width: 465px) and (max-width: 767px) {
     flex-direction: column;
   }
-  @media (max-width: 464px) {
+  @media (min-width: 320px) and(max-width: 464px) {
     flex-direction: column;
   }
 `;

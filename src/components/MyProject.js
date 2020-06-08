@@ -1,38 +1,38 @@
-import React from 'react';
-import styled from 'styled-components';
-import HomeImage from './imgs/homepage.jpg';
-import BackgroundImage from './imgs/mass-icons.png';
+import React from "react";
+import styled from "styled-components";
+import HomeImage from "./imgs/homepage.jpg";
+import BackgroundImage from "./imgs/mass-icons.png";
 export default function MyProject() {
   const myProject = [
     {
-      name: 'web-express',
-      date_start: '10/2018',
-      date_end: '12/2018',
-      language: 'Node Js, HTML/CSS, Javascript',
-      database: 'mongodb',
-      member: '1',
-      url: 'https://github.com/ngocquangdang/web-express',
+      name: "web-express",
+      date_start: "10/2018",
+      date_end: "12/2018",
+      language: "Node Js, HTML/CSS, Javascript",
+      database: "mongodb",
+      member: "1",
+      url: "https://github.com/ngocquangdang/web-express",
     },
     {
-      name: 'lluxury-restaurant',
-      date_start: '05/2019',
-      date_end: '08/2019',
-      language: 'HTML/CSS, Pug template, SASS/SCSS',
-      member: '1',
-      url: 'https://github.com/ngocquangdang/lluxury-restaurant',
+      name: "lluxury-restaurant",
+      date_start: "05/2019",
+      date_end: "08/2019",
+      language: "HTML/CSS, Pug template, SASS/SCSS",
+      member: "1",
+      url: "https://github.com/ngocquangdang/lluxury-restaurant",
     },
     {
-      name: 'eTravel',
-      date_start: '02/2020',
-      date_end: '052020',
-      language: 'Node js, react js, HTML/CSS',
-      database: 'mongodb',
-      member: '5',
-      url: 'https://bitbucket.org/royce_enclave/etravel-frontend',
+      name: "eTravel",
+      date_start: "02/2020",
+      date_end: "052020",
+      language: "Node js, react js, HTML/CSS",
+      database: "mongodb",
+      member: "5",
+      url: "https://bitbucket.org/royce_enclave/etravel-frontend",
     },
   ];
   return (
-    <Container id='my-project'>
+    <Container id="my-project">
       <Title>My project</Title>
       <Slider>
         <ListItem>
@@ -43,7 +43,7 @@ export default function MyProject() {
                 <Date>
                   {project.date_start} - {project.date_end}
                 </Date>
-                <SubTitle href={`${project.url}`} target='_blank'>
+                <SubTitle href={`${project.url}`} target="_blank">
                   {project.name}
                 </SubTitle>
                 <Description>{project.language}</Description>
@@ -63,10 +63,10 @@ const Container = styled.div`
   background-image: url(${BackgroundImage});
   background-attachment: fixed;
   background-size: cover;
-  @media (min-width: 345px){
-   display: flex;
-   flex-direction: column; 
-   align-items: center;
+  @media (min-width: 345px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 const Title = styled.h1`
@@ -93,7 +93,7 @@ const ListItem = styled.ul`
     flex-direction: column;
     width: 100%;
   }
-  @media (max-width: 464px) {
+  @media (min-width: 320px) and(max-width: 464px) {
     flex-direction: column;
     width: 100%;
   }
