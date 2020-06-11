@@ -32,7 +32,7 @@ export default function MyProject() {
     },
   ];
   return (
-    <Container id="my-project">
+    <Container id='my-project'>
       <Title>My project</Title>
       <Slider>
         <ListItem>
@@ -43,7 +43,7 @@ export default function MyProject() {
                 <Date>
                   {project.date_start} - {project.date_end}
                 </Date>
-                <SubTitle href={`${project.url}`} target="_blank">
+                <SubTitle href={`${project.url}`} target='_blank'>
                   {project.name}
                 </SubTitle>
                 <Description>{project.language}</Description>
@@ -87,7 +87,6 @@ const ListItem = styled.ul`
     flex: 2;
   }
   @media (min-width: 768px) and (max-width: 1023px) {
-    
   }
   @media (min-width: 465px) and (max-width: 767px) {
     flex-direction: column;
@@ -96,7 +95,6 @@ const ListItem = styled.ul`
   }
   @media (min-width: 320px) and (max-width: 464px) {
     flex-direction: column;
-   
   }
 `;
 const CartItem = styled.li`
@@ -108,7 +106,6 @@ const CartItem = styled.li`
   }
   @media (min-width: 320px) and (max-width: 464px) {
     margin: 0;
-   
   }
 `;
 const Image = styled.img`

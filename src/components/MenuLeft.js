@@ -28,6 +28,10 @@ export default function MenuLeft() {
     },
   ]);
 
+  const setIsActive = (url) => {
+
+
+  };
   return (
     <Container>
       <Header>
@@ -36,33 +40,35 @@ export default function MenuLeft() {
       </Header>
       <Menu>
         {URL.map((url, index) => (
-          <Item
-            key={index}
-            active={url.isActive}
-            onClick={() =>
-              setURL([
-                ...URL.slice(0, index),
-                {
-                  ...url,
-                  isActive: !url.isActive,
-                },
-                ...URL.slice(index + 1),
-              ])
-            }
-          >
+          <Item key={index} active={url.isActive}>
             {url.icon}
-            <Link href={`#${url.url}`} active={url.isActive}>
+            <Link
+              href={`#${url.url}`}
+              active={url.isActive}
+              onClick={() =>{if(index === index){
+                setURL([
+                  ...URL.slice(0, index),
+                  {
+                    ...url,
+                    isActive: url.isActive,
+                  },
+                  ...URL.slice(index + 1),
+                ])
+              }}
+                
+              }
+            >
               {url.name}
             </Link>
           </Item>
         ))}
       </Menu>
       <Contact>
-        <Link href="https:/fb.com/ngoc.quang256" target="_blank">
-          <FaFacebookF style={{ fontSize: "20px", marginRight: "5px", padding: ".5rem", borderRadius: "50%", backgroundColor:"#212431"}} />
+        <Link href='https:/fb.com/ngoc.quang256' target='_blank'>
+          <FbIcon></FbIcon>
         </Link>
-        <Link target="_blank">
-          <FaSkype style={{ fontSize: "20px", padding: ".5rem", borderRadius: "50%", backgroundColor:"#212431" }} />
+        <Link target='_blank'>
+          <FaSky></FaSky>
         </Link>
       </Contact>
       <Signature>copyright © 2020</Signature>
@@ -72,24 +78,24 @@ export default function MenuLeft() {
 
 const FbIcon = styled(FaFacebookF)`
   font-size: 20px;
-  padding: .5rem;
+  padding: 0.5rem;
   margin-right: 5px;
   background: #212431;
   border-radius: 50%;
-  &:hover{
+  &:hover {
     background: #3e43e9;
   }
-`
+`;
 const FaSky = styled(FaSkype)`
   font-size: 20px;
-  padding: .5rem;
+  padding: 0.5rem;
   margin-right: 5px;
   background: #212431;
   border-radius: 50%;
-  &:hover{
+  &:hover {
     background: #3e43e9;
   }
-`
+`;
 const Signature = styled.p`
   color: #ffffff;
   text-transform: capitalize;
@@ -127,6 +133,7 @@ const Menu = styled.ul`
 const Link = styled.a`
   text-transform: capitalize;
   text-decoration: none;
+  
   color: ${(props) => (props.active ? "#3e43e9" : "#ffffff")};
   padding-left: 0.5rem;
 `;
@@ -137,10 +144,12 @@ const Item = styled.li`
   padding: 0.7rem 0 0.7rem 1.5rem;
   list-style: none;
   border-left: ${(props) => (props.active ? "4px solid #3e43e9" : "none")};
+  background-color: ${(props) => (props.active ? "#333": "#000")};
   color: ${(props) => (props.active ? "#3e43e9" : "white")};
 
   &:hover {
     color: #3e43e9;
+    background-color: #333;
     border-left: 4px solid #3e43e9;
     cursor: pointer;
     > ${Link} {
