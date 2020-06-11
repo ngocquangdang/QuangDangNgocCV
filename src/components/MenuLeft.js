@@ -59,16 +59,37 @@ export default function MenuLeft() {
       </Menu>
       <Contact>
         <Link href="https:/fb.com/ngoc.quang256" target="_blank">
-          <FaFacebookF style={{ fontSize: "20px", marginRight: "5px" }} />
+          <FaFacebookF style={{ fontSize: "20px", marginRight: "5px", padding: ".5rem", borderRadius: "50%", backgroundColor:"#212431"}} />
         </Link>
         <Link target="_blank">
-          <FaSkype style={{ fontSize: "20px" }} />
+          <FaSkype style={{ fontSize: "20px", padding: ".5rem", borderRadius: "50%", backgroundColor:"#212431" }} />
         </Link>
       </Contact>
       <Signature>copyright © 2020</Signature>
     </Container>
   );
 }
+
+const FbIcon = styled(FaFacebookF)`
+  font-size: 20px;
+  padding: .5rem;
+  margin-right: 5px;
+  background: #212431;
+  border-radius: 50%;
+  &:hover{
+    background: #3e43e9;
+  }
+`
+const FaSky = styled(FaSkype)`
+  font-size: 20px;
+  padding: .5rem;
+  margin-right: 5px;
+  background: #212431;
+  border-radius: 50%;
+  &:hover{
+    background: #3e43e9;
+  }
+`
 const Signature = styled.p`
   color: #ffffff;
   text-transform: capitalize;

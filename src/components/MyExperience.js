@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import Skill from "./Skills";
 
 export default function MyExperience() {
@@ -56,7 +56,26 @@ export default function MyExperience() {
     </Container>
   );
 }
-
+const fadeDownAnimation = keyframes`
+  from{
+    opacity: 0;
+    transform: translateY(-100px)
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0)
+  }
+`
+const fadeUpAnimation = keyframes`
+ from{
+    opacity: 0;
+    transform: translateY(100px)
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0)
+  }
+`
 const Container = styled.div`
   display: flex;
   padding: 100px 3%;
@@ -78,9 +97,15 @@ const Container = styled.div`
 `;
 const Experience = styled.div`
   flex: 1;
+  animation-name: ${fadeDownAnimation};
+  animation-duration: 2s;
+  animation-delay: .5s;
 `;
 const Skills = styled.div`
   flex: 1;
+  animation-name: ${fadeUpAnimation};
+  animation-duration: 2s;
+  animation-delay: .5s;
 `;
 const Title = styled.h1`
   margin-top: 0;
