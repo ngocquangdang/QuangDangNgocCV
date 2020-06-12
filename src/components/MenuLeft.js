@@ -12,26 +12,21 @@ import {
 import Avatars from "./imgs/avt.jpg";
 export default function MenuLeft() {
   const [URL, setURL] = useState([
-    { url: "home-page", name: "home", icon: <FaHome />, isActive: true },
-    { url: "about-me", name: "about", icon: <FaStreetView />, isActive: false },
+    { url: "home-page", name: "home", icon: <FaHome />,  },
+    { url: "about-me", name: "about", icon: <FaStreetView /> },
     {
       url: "my-experience",
       name: "experience",
       icon: <IoIosRocket />,
-      isActive: false,
     },
     {
       url: "my-project",
       name: "project",
       icon: <FaToolbox />,
-      isActive: false,
     },
   ]);
 
-  const setIsActive = (url) => {
-
-
-  };
+  const setIsActive = (url) => {};
   return (
     <Container>
       <Header>
@@ -45,18 +40,17 @@ export default function MenuLeft() {
             <Link
               href={`#${url.url}`}
               active={url.isActive}
-              onClick={() =>{if(index === index){
+              onClick={() => {
+                URL.map(i => i.isActive =false)
                 setURL([
                   ...URL.slice(0, index),
                   {
                     ...url,
-                    isActive: url.isActive,
+                    isActive: true,
                   },
                   ...URL.slice(index + 1),
-                ])
+                ]);
               }}
-                
-              }
             >
               {url.name}
             </Link>
@@ -133,7 +127,7 @@ const Menu = styled.ul`
 const Link = styled.a`
   text-transform: capitalize;
   text-decoration: none;
-  
+
   color: ${(props) => (props.active ? "#3e43e9" : "#ffffff")};
   padding-left: 0.5rem;
 `;
@@ -144,7 +138,7 @@ const Item = styled.li`
   padding: 0.7rem 0 0.7rem 1.5rem;
   list-style: none;
   border-left: ${(props) => (props.active ? "4px solid #3e43e9" : "none")};
-  background-color: ${(props) => (props.active ? "#333": "#000")};
+  background-color: ${(props) => (props.active ? "#333" : "#000")};
   color: ${(props) => (props.active ? "#3e43e9" : "white")};
 
   &:hover {
