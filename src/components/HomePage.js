@@ -15,7 +15,7 @@ export default function HomePage() {
       >
         <Content>
           <Name>ngoc quang dang</Name>
-          <Description>I'm a Front-end Developer</Description>
+          <Description>Fresher Front-end</Description>
         </Content>
       </div>
       <div

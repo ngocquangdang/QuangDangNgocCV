@@ -25,13 +25,14 @@ export default function MenuLeft() {
       icon: <FaToolbox />,
     },
   ]);
+  console.log('MenuLeft -> URL', URL)
 
   const setIsActive = (url) => {};
   return (
     <Container>
       <Header>
         <Avatar style={{ backgroundImage: `url(${Avatars})` }} />
-        <Title>quang n. dang</Title>
+        <Title>ngoc quang dang</Title>
       </Header>
       <Menu>
         {URL.map((url, index) => (
@@ -61,7 +62,7 @@ export default function MenuLeft() {
         <Link href='https:/fb.com/ngoc.quang256' target='_blank'>
           <FbIcon></FbIcon>
         </Link>
-        <Link target='_blank'>
+        <Link href='https://join.skype.com/invite/XHKKSXWBY4oL' target='_blank'>
           <FaSky></FaSky>
         </Link>
       </Contact>

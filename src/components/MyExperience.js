@@ -7,27 +7,28 @@ export default function MyExperience() {
     {
       start_date: "01/2020",
       end_date: "07/2020",
-      conpany_name: "enclave company",
-      position: "cadet",
+      conpany_name: "enclave-Software Development Centers",
+      position: "internship",
       description:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
-    },
-    {
-      start_date: "01/2020",
-      end_date: "07/2020",
-      conpany_name: "enclave company 2",
-      position: "cadet",
-      description:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
+        "",
     },
   ];
+  const education = [
+    {
+      major: "Information technology",
+      school_name: 'University of Science and Education',
+      start_date: '08/2016',
+      end_date: '06/2020',
+      gpa: '2.76/4'
+    }
+  ]
   const skills = [
-    { skill_name: "html/css", percent: "70" },
-    { skill_name: "git", percent: "70" },
-    { skill_name: "javascript", percent: "70" },
-    { skill_name: "sass/scss", percent: "70" },
-    { skill_name: "react", percent: "70" },
-    { skill_name: "english", percent: "70" },
+    { skill_name: "html/css", percent: "50" },
+    { skill_name: "git", percent: "40" },
+    { skill_name: "javascript", percent: "45" },
+    { skill_name: "sass/scss", percent: "40" },
+    { skill_name: "react", percent: "50" },
+    { skill_name: "english", percent: "30" },
   ];
   return (
     <Container id="my-experience">
@@ -44,6 +45,23 @@ export default function MyExperience() {
                 <Name>{exp.conpany_name}</Name>
                 <Position>{exp.position}</Position>
                 <Description>{exp.description}</Description>
+              </SubItem>
+            </Item>
+          ))}
+        </TimeLine>
+        <br />
+        <Title>Education</Title>
+        <TimeLine>
+          {education.map((edu, index) => (
+            <Item key={index}>
+              <Dot></Dot>
+              <SubItem>
+                <Date>
+                  {edu.start_date} - {edu.end_date}
+                </Date>
+                <Name>{edu.school_name}</Name>
+                <Position>Major: {edu.major}</Position>
+                <Description>GPA: {edu.gpa}</Description>
               </SubItem>
             </Item>
           ))}

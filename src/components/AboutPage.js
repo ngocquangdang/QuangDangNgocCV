@@ -31,8 +31,8 @@ export default function AboutPage() {
         <Detail>
           <SubTitle>career goal</SubTitle>
           <Paragrap>
-            Improved programming skills, English skills, technical skills and
-            soft skills necessary for the web developer. Master front-end in two
+            Improve programming skills, English skills, technical skills and
+            soft skills necessary for software engineer. Master front-end in two
             years, after is a full stack web developer in three-four years.
           </Paragrap>
           <ContactGroup>

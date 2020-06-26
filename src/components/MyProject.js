@@ -24,7 +24,7 @@ export default function MyProject() {
     {
       name: "eTravel",
       date_start: "02/2020",
-      date_end: "052020",
+      date_end: "05/2020",
       language: "Node js, react js, HTML/CSS",
       database: "mongodb",
       member: "5",
@@ -33,7 +33,7 @@ export default function MyProject() {
   ];
   return (
     <Container id='my-project'>
-      <Title>My project</Title>
+      <Title>My projects</Title>
       <Slider>
         <ListItem>
           {myProject.map((project, index) => (
