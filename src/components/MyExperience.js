@@ -6,7 +6,7 @@ export default function MyExperience() {
   const experiences = [
     {
       start_date: "01/2020",
-      end_date: "07/2020",
+      end_date: "06/2020",
       conpany_name: "enclave-Software Development Centers",
       position: "internship",
       description:
