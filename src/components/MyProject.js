@@ -48,6 +48,7 @@ export default function MyProject() {
                 </SubTitle>
                 <Description>{project.language}</Description>
                 <Description>{project.database}</Description>
+                <Description>Team Size: {project.member}</Description>
               </Content>
             </CartItem>
           ))}
