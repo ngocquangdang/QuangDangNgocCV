@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Qprofile/static/css/main.e5928551.chunk.css",
-    "main.js": "/Qprofile/static/js/main.189dfd7f.chunk.js",
-    "main.js.map": "/Qprofile/static/js/main.189dfd7f.chunk.js.map",
+    "main.css": "/Qprofile/static/css/main.4cf38761.chunk.css",
+    "main.js": "/Qprofile/static/js/main.3a644d5e.chunk.js",
+    "main.js.map": "/Qprofile/static/js/main.3a644d5e.chunk.js.map",
     "runtime-main.js": "/Qprofile/static/js/runtime-main.793f0eaa.js",
     "runtime-main.js.map": "/Qprofile/static/js/runtime-main.793f0eaa.js.map",
     "static/js/2.30ccfe43.chunk.js": "/Qprofile/static/js/2.30ccfe43.chunk.js",
     "static/js/2.30ccfe43.chunk.js.map": "/Qprofile/static/js/2.30ccfe43.chunk.js.map",
     "index.html": "/Qprofile/index.html",
-    "precache-manifest.2e25eb0ada25903c6bbc13ddc439ead2.js": "/Qprofile/precache-manifest.2e25eb0ada25903c6bbc13ddc439ead2.js",
+    "precache-manifest.80388cd9af7b27ab002538f8558ea26c.js": "/Qprofile/precache-manifest.80388cd9af7b27ab002538f8558ea26c.js",
     "service-worker.js": "/Qprofile/service-worker.js",
-    "static/css/main.e5928551.chunk.css.map": "/Qprofile/static/css/main.e5928551.chunk.css.map",
+    "static/css/main.4cf38761.chunk.css.map": "/Qprofile/static/css/main.4cf38761.chunk.css.map",
     "static/js/2.30ccfe43.chunk.js.LICENSE.txt": "/Qprofile/static/js/2.30ccfe43.chunk.js.LICENSE.txt",
     "static/media/avt.jpg": "/Qprofile/static/media/avt.c2b54396.jpg",
     "static/media/cover.jpg": "/Qprofile/static/media/cover.462afdc8.jpg",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.793f0eaa.js",
     "static/js/2.30ccfe43.chunk.js",
-    "static/css/main.e5928551.chunk.css",
-    "static/js/main.189dfd7f.chunk.js"
+    "static/css/main.4cf38761.chunk.css",
+    "static/js/main.3a644d5e.chunk.js"
   ]
 }
