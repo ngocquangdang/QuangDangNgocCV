@@ -25,7 +25,6 @@ export default function MenuLeft() {
       icon: <FaToolbox />,
     },
   ]);
-  console.log('MenuLeft -> URL', URL)
 
   const setIsActive = (url) => {};
   return (
