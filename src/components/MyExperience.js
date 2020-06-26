@@ -10,7 +10,7 @@ export default function MyExperience() {
       conpany_name: "enclave-Software Development Centers",
       position: "internship",
       description:
-        "",
+        "Learn and participate in project development of internship group, understands how to teamwork, divide the work and improve soft skills",
     },
   ];
   const education = [
