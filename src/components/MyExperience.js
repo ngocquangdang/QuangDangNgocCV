@@ -24,10 +24,10 @@ export default function MyExperience() {
   ]
   const skills = [
     { skill_name: "html/css", percent: "50" },
-    { skill_name: "git", percent: "40" },
-    { skill_name: "javascript", percent: "45" },
+    { skill_name: "git", percent: "35" },
+    { skill_name: "javascript", percent: "42" },
     { skill_name: "sass/scss", percent: "40" },
-    { skill_name: "react", percent: "50" },
+    { skill_name: "reactJs", percent: "45" },
     { skill_name: "english", percent: "30" },
   ];
   return (
