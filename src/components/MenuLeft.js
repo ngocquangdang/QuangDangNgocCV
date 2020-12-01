@@ -52,7 +52,7 @@ export default function MenuLeft() {
         ))}
       </Menu>
       <Contact>
-        <Link href="https://fb.com/ngoc.quang256" target="_blank">
+        <Link href="https://facebook.com/ngoc.quang256" target="_blank">
           <FbIcon></FbIcon>
         </Link>
         <Link href="https://join.skype.com/invite/XHKKSXWBY4oL" target="_blank">
