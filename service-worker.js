@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/QuangDangNgocCV/precache-manifest.7ccf4b754c1c9c366b5a87b5baf6aed1.js"
+  "/QuangDangNgocCV/precache-manifest.082f85f8563844adc5c9ac0a330b5647.js"
 );
 
 self.addEventListener('message', (event) => {
