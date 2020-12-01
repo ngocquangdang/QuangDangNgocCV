@@ -1,5 +1,5 @@
 import React from "react";
-import styled, {keyframes} from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Skill from "./Skills";
 
 export default function MyExperience() {
@@ -12,16 +12,23 @@ export default function MyExperience() {
       description:
         "Learn and participate in project development of internship group, understands how to teamwork, divide the work and improve soft skills",
     },
+    {
+      start_date: "07/2020",
+      end_date: "Currently",
+      conpany_name: "DigitalFortress",
+      position: "front-end developer",
+      description: '',
+    },
   ];
   const education = [
     {
       major: "Information technology",
-      school_name: 'University of Science and Education',
-      start_date: '08/2016',
-      end_date: '06/2020',
-      gpa: '2.76/4'
-    }
-  ]
+      school_name: "University of Science and Education",
+      start_date: "08/2016",
+      end_date: "06/2020",
+      gpa: "2.76/4",
+    },
+  ];
   const skills = [
     { skill_name: "html/css", percent: "50" },
     { skill_name: "git", percent: "35" },
@@ -83,7 +90,7 @@ const fadeDownAnimation = keyframes`
     opacity: 1;
     transform: translateY(0)
   }
-`
+`;
 const fadeUpAnimation = keyframes`
  from{
     opacity: 0;
@@ -93,7 +100,7 @@ const fadeUpAnimation = keyframes`
     opacity: 1;
     transform: translateY(0)
   }
-`
+`;
 const Container = styled.div`
   display: flex;
   padding: 100px 3%;
@@ -117,19 +124,18 @@ const Experience = styled.div`
   flex: 1;
   animation-name: ${fadeDownAnimation};
   animation-duration: 2s;
-  animation-delay: .5s;
+  animation-delay: 0.5s;
 `;
 const Skills = styled.div`
   flex: 1;
   animation-name: ${fadeUpAnimation};
   animation-duration: 2s;
-  animation-delay: .5s;
+  animation-delay: 0.5s;
 `;
 const Title = styled.h1`
   margin-top: 0;
   margin-left: 10px;
   margin-top: 20px;
-
 `;
 const TimeLine = styled.div``;
 const Dot = styled.span`
@@ -175,6 +181,7 @@ const Name = styled.span`
   text-transform: capitalize;
   font-weight: 700;
   line-height: 2;
+  text-align: start;
 `;
 const Position = styled.span`
   text-transform: capitalize;

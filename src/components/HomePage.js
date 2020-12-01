@@ -14,8 +14,8 @@ export default function HomePage() {
         }}
       >
         <Content>
-          <Name>ngoc quang dang</Name>
-          <Description>Fresher Front-end</Description>
+          <Name>quang dang ngoc</Name>
+          <Description>Front-end Developer</Description>
         </Content>
       </div>
       <div

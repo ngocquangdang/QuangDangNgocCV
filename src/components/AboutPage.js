@@ -1,29 +1,29 @@
-import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import ImageCover from './imgs/cover.jpg';
+import React from "react";
+import styled, { keyframes } from "styled-components";
+import ImageCover from "./imgs/cover.jpg";
 export default function AboutPage() {
   const initdata = [
-    { key: 'name', description: 'ngoc quang dang' },
-    { key: 'phone', description: '+84 984 863 639' },
-    { key: 'birthday', description: '06/13/1998' },
-    { key: 'email', description: 'ngocquang.nq98@gmail.com', unCap: true },
+    { key: "name", description: "ngoc quang dang" },
+    { key: "phone", description: "+84 984 863 639" },
+    { key: "birthday", description: "06/13/1998" },
+    { key: "email", description: "ngocquang.nq98@gmail.com", unCap: true },
     {
-      key: 'address',
-      description: '459 ton duc thang str, hoa khanh nam ward, da nang',
+      key: "address",
+      description: "459 ton duc thang str, hoa khanh nam ward, da nang",
     },
     {
-      key: 'facebook',
-      description: 'https:/fb.com/ngoc.quang256',
+      key: "facebook",
+      description: "https:/fb.com/ngoc.quang256",
       unCap: true,
     },
   ];
   return (
-    <Container id='about-me'>
+    <Container id="about-me">
       <Avatar>
         <img
           src={ImageCover}
-          alt=''
-          style={{ width: '100%', height: '100%' }}
+          alt=""
+          style={{ width: "100%" }}
         />
       </Avatar>
       <About>
@@ -45,10 +45,10 @@ export default function AboutPage() {
           </ContactGroup>
         </Detail>
         <ButtonGroup>
-          <Button href='#my-experience' black>
+          <Button href="#my-experience" black>
             experience
           </Button>
-          <Button href='#my-project'> projects</Button>
+          <Button href="#my-project"> projects</Button>
         </ButtonGroup>
       </About>
     </Container>
@@ -73,7 +73,7 @@ from {
     opacity:1;
     transform: translatex(0);
   }
-`
+`;
 const Container = styled.div`
   display: flex;
   padding: 100px 3%;
@@ -95,8 +95,8 @@ const Avatar = styled.div`
   width: 430px;
   animation-name: ${fadeInLeftAnimation};
   animation-duration: 2s;
-  animation-delay: .5s;
-  
+  animation-delay: 0.5s;
+
   @media (min-width: 1024px) and (max-width: 1280) {
     flex: 1;
   }
@@ -104,19 +104,27 @@ const Avatar = styled.div`
     display: flex;
     justify-content: center;
     margin: 16px auto;
-    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 320px;
+    height: 350px;
   }
   @media (min-width: 465px) and (max-width: 767px) {
     display: flex;
     justify-content: center;
     margin: 16px auto;
-    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
+    height: 350px;
   }
   @media (min-width: 320px) and (max-width: 464px) {
     display: flex;
     justify-content: center;
     margin: 16px auto;
-    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
     height: 100%;
     animation-name: ${fadeInLeftAnimation};
     animation-duration: 3s;
@@ -143,7 +151,7 @@ const About = styled.div`
     width: 100%;
     margin: 0;
     animation-name: ${fadeInRightAnimation};
-  animation-duration: 3s;
+    animation-duration: 3s;
   }
 `;
 const Title = styled.h1`
@@ -176,13 +184,13 @@ const Label = styled.label`
   font-weight: 700;
 `;
 const Description = styled.label`
-  text-transform: ${(props) => (props.cap ? 'none' : 'capitalize')};
+  text-transform: ${(props) => (props.cap ? "none" : "capitalize")};
   color: #333;
   font-weight: 400;
 `;
 const Button = styled.a`
-  background: ${(props) => (props.black ? 'black' : 'white')};
-  color: ${(props) => (props.black ? 'white' : 'black')};
+  background: ${(props) => (props.black ? "black" : "white")};
+  color: ${(props) => (props.black ? "white" : "black")};
   text-transform: capitalize;
   padding: 1rem 3rem;
   margin-right: 20px;

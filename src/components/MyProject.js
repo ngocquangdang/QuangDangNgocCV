@@ -129,8 +129,9 @@ const SubTitle = styled.a`
   line-height: 2.5;
   font-weight: 700;
   text-decoration: none;
+  color: #1a1a1a;
   &:visited {
-    color: black;
+    color: #1a1a1a;
     &:hover {
       color: #3e43e9;
       cursor: pointer;

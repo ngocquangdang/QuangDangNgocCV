@@ -11,8 +11,10 @@ import {
 
 import Avatars from "./imgs/avt.jpg";
 export default function MenuLeft() {
-  const [URL, setURL] = useState([
-    { url: "home-page", name: "home", icon: <FaHome />,  },
+  const [routeSelected, setRouteSelected] = useState("home-page");
+
+  const URL = [
+    { url: "home-page", name: "home", icon: <FaHome /> },
     { url: "about-me", name: "about", icon: <FaStreetView /> },
     {
       url: "my-experience",
@@ -24,33 +26,25 @@ export default function MenuLeft() {
       name: "project",
       icon: <FaToolbox />,
     },
-  ]);
+  ];
 
-  const setIsActive = (url) => {};
+  const onSelectedItem = (url) => () => {
+    setRouteSelected(url);
+  };
   return (
     <Container>
       <Header>
         <Avatar style={{ backgroundImage: `url(${Avatars})` }} />
-        <Title>ngoc quang dang</Title>
+        <Title>quang dang ngoc</Title>
       </Header>
       <Menu>
         {URL.map((url, index) => (
-          <Item key={index} active={url.isActive}>
+          <Item key={index} active={routeSelected === url.url}>
             {url.icon}
             <Link
               href={`#${url.url}`}
-              active={url.isActive}
-              onClick={() => {
-                URL.map(i => i.isActive =false)
-                setURL([
-                  ...URL.slice(0, index),
-                  {
-                    ...url,
-                    isActive: true,
-                  },
-                  ...URL.slice(index + 1),
-                ]);
-              }}
+              active={routeSelected === url.url}
+              onClick={onSelectedItem(url.url)}
             >
               {url.name}
             </Link>
@@ -58,10 +52,10 @@ export default function MenuLeft() {
         ))}
       </Menu>
       <Contact>
-        <Link href='https:/fb.com/ngoc.quang256' target='_blank'>
+        <Link href="https:/fb.com/ngoc.quang256" target="_blank">
           <FbIcon></FbIcon>
         </Link>
-        <Link href='https://join.skype.com/invite/XHKKSXWBY4oL' target='_blank'>
+        <Link href="https://join.skype.com/invite/XHKKSXWBY4oL" target="_blank">
           <FaSky></FaSky>
         </Link>
       </Contact>
