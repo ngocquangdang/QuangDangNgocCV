@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "64bb4bd24df543bf3c3d4aef87db4b53",
+    "revision": "05e3d513e2e909e111380e140fe1959f",
     "url": "/QuangDangNgocCV/index.html"
   },
   {
-    "revision": "0a01f144b2b4a2221ae5",
+    "revision": "9d6e814845eb0570bcd2",
     "url": "/QuangDangNgocCV/static/css/main.e5928551.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/QuangDangNgocCV/static/js/2.940775ea.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0a01f144b2b4a2221ae5",
-    "url": "/QuangDangNgocCV/static/js/main.d9388469.chunk.js"
+    "revision": "9d6e814845eb0570bcd2",
+    "url": "/QuangDangNgocCV/static/js/main.00282178.chunk.js"
   },
   {
     "revision": "d1c62f447e4a39130d6d",
